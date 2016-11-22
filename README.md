@@ -1,6 +1,7 @@
 # Screenshoot Grab Program
 
 [![image](http://i.imgur.com/Vk5CpFI.png)](http://imgur.com/a/0upT9/) 
+###[DOWNLOAD](https://github.com/AlexALX/ScreenshootGrab/releases)
 
 ## Description
 This is small simple program to grab and save screenshots on the computer with the ability to upload in own server or [imgur.com](http://imgur.com/) service.
@@ -41,6 +42,7 @@ Read more on [wiki](https://github.com/AlexALX/ScreenshootGrab/wiki).
 ----------------
 
 [![image](http://i.imgur.com/QdTOYxy.png)](http://imgur.com/a/0upT9/) 
+###[СКАЧАТЬ](https://github.com/AlexALX/ScreenshootGrab/releases)
 
 ## Описание
 Небольшая простая программа для захвата и сохранения скриншотов на компьютер с возможностью загрузки на свой сервер или сервис [imgur.com](http://imgur.com/).
