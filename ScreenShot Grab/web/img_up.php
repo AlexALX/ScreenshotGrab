@@ -3,8 +3,8 @@
 // config
 $agent = "test-upload";
 $key = "TEST";
-$img_dir = "temp/img/";
-$url = "http://".$_SERVER['SERVER_NAME']."/temp/img/";
+$img_dir = "img/";
+$url = "http://".$_SERVER['SERVER_NAME']."/img/";
 // end
 
 if ($_SERVER['HTTP_USER_AGENT']!=$agent || $_GET['key']!=$key) die();
