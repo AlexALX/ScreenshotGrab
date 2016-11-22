@@ -35,8 +35,8 @@ namespace ScreenShot_Grab
 
         internal ResourceManager LocM = new ResourceManager("ScreenShot_Grab.Resources.WinFormStrings", typeof(MainForm).Assembly);
 
-        internal string clientid = "b600504acf60f18";
-        internal string clientsecret = "b85218f324522c74943bb5a0f406359fe7de789a";
+        internal string clientid = "afd1481e5938c4d";
+        internal string clientsecret = "3d4ea898105c1a3f01baeac89ff602f97e9df6ab";
 
         internal string spath = "";
         internal string lastfile = "";
