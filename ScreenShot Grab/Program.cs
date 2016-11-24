@@ -185,6 +185,9 @@ namespace ScreenShot_Grab
                         var res = Scr.Capture(ScreenCapturer.CaptureMode.Window, Properties.Settings.Default.cutborder);
                         WinForm.OnGrabScreen(res, false, true);
                         pressed = false;
+                    /*} else if(pressed && wParam == (IntPtr)257 && Keys.Shift == Control.ModifierKeys && number == Keys.PrintScreen) {
+                        Debug.WriteLine("shift+printscreen test");
+                        pressed = false;*/
                     } else if (pressed && wParam == (IntPtr)257 && number == Keys.PrintScreen) {
                         var res = Scr.Capture(ScreenCapturer.CaptureMode.Screen);
                         WinForm.OnGrabScreen(res);

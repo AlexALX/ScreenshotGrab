@@ -154,6 +154,12 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Screenshoot saving</value>
   </data>
+  <data name="autosave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 17</value>
+  </data>
+  <data name="autosave.Text" xml:space="preserve">
+    <value>Automatically save screenshots after capture</value>
+  </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 13</value>
   </data>
@@ -161,7 +167,7 @@
     <value>Quality:</value>
   </data>
   <data name="format.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 64</value>
+    <value>83, 55</value>
   </data>
   <data name="format.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 21</value>
@@ -211,8 +217,11 @@
   <data name="imgurb.Text" xml:space="preserve">
     <value>Connect account</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Additional</value>
+  <data name="startmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 17</value>
+  </data>
+  <data name="startmin.Text" xml:space="preserve">
+    <value>Minimize program at startup</value>
   </data>
   <data name="logfilecheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 17</value>
@@ -252,6 +261,9 @@
   </data>
   <data name="opendir.Text" xml:space="preserve">
     <value>Automatically open folder after save</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Additional</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>

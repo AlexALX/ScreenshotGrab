@@ -75,6 +75,9 @@ namespace ScreenShot_Grab
             Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
             notifyIcon1.Icon = Icon;
             notifyIcon1.Visible = true;
+            if (Properties.Settings.Default.startmin) {
+                WindowState = FormWindowState.Minimized;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -134,6 +137,11 @@ namespace ScreenShot_Grab
         {
             var lang = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
             if (lang != "ru" && lang != "uk") lang = "en";
+            foreach (CultureInfo item in GetSupportedCulture()) {
+                if (item.TwoLetterISOLanguageName == lang) {
+                    lang = item.TwoLetterISOLanguageName;
+                }
+            }
             Properties.Settings.Default.language = lang;
             Properties.Settings.Default.Save();
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(lang);
@@ -200,7 +208,7 @@ namespace ScreenShot_Grab
             if (Properties.Settings.Default.autoshow && !clipboard) {
                 TrayShowHide(true);
             }
-            if (res==null) {
+            if (res == null) {
                 MessageBox.Show(LocM.GetString("capture_err"), LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 AddEvent(LocM.GetString("event_capture_err"));
             }
@@ -208,6 +216,9 @@ namespace ScreenShot_Grab
                 AddEvent(LocM.GetString("event_clipboard"));
             } else {
                 AddEvent(LocM.GetString("event_grab" + (capwindow ? "w" : "")));
+            }
+            if (Properties.Settings.Default.autosave && !clipboard) {
+                SimpleSave();
             }
         }
 
@@ -361,8 +372,18 @@ namespace ScreenShot_Grab
                 return false;
             }
             Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
-            var FileName = base_convert(unixTimestamp.ToString(), 10, 36);
-            SaveFile(spath + FileName + "." + ImgFormatExt[Properties.Settings.Default.format], ImgFormat[Properties.Settings.Default.format]);
+            var FileName = ConvertToBase(unixTimestamp, 36);
+            var FileExt = ImgFormatExt[Properties.Settings.Default.format];
+            if (!edit) {
+                var i = 0;
+                var fname = FileName;
+                while(File.Exists(spath + fname + "." + FileExt)) {
+                    i++;
+                    fname = FileName + ConvertToBase(i, 36);
+                }
+                FileName = fname;
+            }
+            SaveFile(spath + FileName + "." + FileExt, ImgFormat[Properties.Settings.Default.format]);
             if (savelabel.Text == LocM.GetString("error")) {
                 AddEvent(LocM.GetString("event_save_err"));
                 return false;
@@ -792,6 +813,26 @@ namespace ScreenShot_Grab
         /// Misc functions
         /// </summary>
 
+        // (c) http://stackoverflow.com/questions/553244/programmatic-way-to-get-all-the-available-languages-in-satellite-assemblies
+        internal IList<CultureInfo> GetSupportedCulture()
+        {
+            //Get all culture 
+            CultureInfo[] culture = CultureInfo.GetCultures(CultureTypes.AllCultures);
+
+            //Find the location where application installed.
+            string exeLocation = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
+
+            //Return all culture for which satellite folder found with culture code.
+            //return culture.Where(cultureInfo => Directory.Exists(Path.Combine(exeLocation, cultureInfo.Name)));
+            IList<CultureInfo> cultures = new List<CultureInfo>();
+            foreach (var cultureInfo in culture) {
+                if (Directory.Exists(Path.Combine(exeLocation, cultureInfo.Name))) {
+                    cultures.Add(cultureInfo);
+                }
+            }
+            return cultures;
+        }
+
         private void noimage()
         {
             MessageBox.Show(LocM.GetString("noprtscr"), LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -914,6 +955,14 @@ namespace ScreenShot_Grab
         {
             AddEvent(LocM.GetString("event_close"));
             if (logfile!=null) logfile.Close();
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.startmin) {
+                Hide();
+                WindowState = FormWindowState.Minimized;
+            }
         }
     }
 }

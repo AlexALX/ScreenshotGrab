@@ -1,4 +1,4 @@
-# Screenshoot Grab Program
+# ScreenShot Grab Program
 
 [![image](http://i.imgur.com/Vk5CpFI.png)](http://imgur.com/a/0upT9/) 
 ###[DOWNLOAD](https://github.com/AlexALX/ScreenshootGrab/releases)
@@ -11,10 +11,10 @@ You can also edit the image via standard windows editor (paint) or specify your 
 The program was created to implement unpretentious image service for own needs.
 
 ## Features
-* Create screenshoots from screen or window.
-* Save screenshoots in PNG/JPG/BMP/GIF formats.
-* Edit screenshoots via system editor (paint) or specify your own.
-* Upload screenshoots to imgur service or own server (php script included).
+* Create screenshots from screen or window.
+* Save screenshots in PNG/JPG/BMP/GIF formats.
+* Edit screenshots via system editor (paint) or specify your own.
+* Upload screenshots to imgur service or own server (php script included).
 * History of events.
 * Some customization settings.
 
@@ -24,18 +24,18 @@ The program was created to implement unpretentious image service for own needs.
 * [optional] Web server with php5 for own image service.
 
 ## Mini-FAQ
-Q: How to make screenshoot?
+Q: How to make screenshot?
 <br>A: Press PrintScreen key.
 
-Q: How to make screenshoot of window?
+Q: How to make screenshot of window?
 <br>A: Press Alt+PrintScreen keys combination on active window.
 
 Q: Program crash at startup!
 <br>A: Make sure you have installed .NET Framework v2.0 or newer.
 
-Q: Screenshoot is black!
-<br>A: Sorry, program cannot capture screenshoots from full-screen application (such as games).
-<br>Note: if you are running windows 10 you can enable "Use clipboard instead of capture" in settings for grab screenshoots from games.
+Q: Screenshot is black!
+<br>A: Sorry, program cannot capture screenshots from full-screen application (such as games).
+<br>Note: if you are running windows 10 you can enable "Use clipboard instead of capture" in settings for grab screenshots from games.
 
 Read more on [wiki](https://github.com/AlexALX/ScreenshootGrab/wiki).
 

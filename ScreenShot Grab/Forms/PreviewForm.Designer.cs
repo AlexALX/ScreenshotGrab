@@ -55,7 +55,7 @@
             this.Name = "PreviewForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Deactivate += new System.EventHandler(this.PreviewForm_Deactivate);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PreviewForm_Deactivate);
             this.Load += new System.EventHandler(this.PreviewForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.panel1.ResumeLayout(false);

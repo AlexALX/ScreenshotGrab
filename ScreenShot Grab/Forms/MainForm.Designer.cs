@@ -422,6 +422,7 @@
             this.Name = "MainForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_Deactivate);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.Resize += new System.EventHandler(this.frmMain_Resize);
             this.MenuTray.ResumeLayout(false);
             this.MenuLastImage.ResumeLayout(false);

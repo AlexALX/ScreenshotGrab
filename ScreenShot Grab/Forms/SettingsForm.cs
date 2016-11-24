@@ -67,9 +67,11 @@ namespace ScreenShot_Grab
             logfilebrowse.Enabled = logfilecheck.Checked;
             logfile.Enabled = logfilecheck.Checked;
             clipboard.Checked = Properties.Settings.Default.clipboard;
+            startmin.Checked = Properties.Settings.Default.startmin;
+            autosave.Checked = Properties.Settings.Default.autosave;
 
             language.Items.Clear();
-            foreach (CultureInfo item in GetSupportedCulture()) {
+            foreach (CultureInfo item in form1.GetSupportedCulture()) {
                 var lc = item.TwoLetterISOLanguageName;
                 var citem = new ComboboxItem(item.NativeName, lc);
                 //Debug.WriteLine(item.NativeName);
@@ -119,6 +121,8 @@ namespace ScreenShot_Grab
                 Properties.Settings.Default.writelog = logfilecheck.Checked;
                 Properties.Settings.Default.logfile = logfile.Text;
                 Properties.Settings.Default.clipboard = clipboard.Checked;
+                Properties.Settings.Default.startmin = startmin.Checked;
+                Properties.Settings.Default.autosave = autosave.Checked;
                 Properties.Settings.Default.Save();
                 if (Properties.Settings.Default.ignoressl) {
                     ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
@@ -268,26 +272,6 @@ namespace ScreenShot_Grab
                 Debug.WriteLine(ctl.Name);
                 applyResources(manager, ctl.Controls);
             }
-        }
-
-        // (c) http://stackoverflow.com/questions/553244/programmatic-way-to-get-all-the-available-languages-in-satellite-assemblies
-        private IList<CultureInfo> GetSupportedCulture()
-        {
-            //Get all culture 
-            CultureInfo[] culture = CultureInfo.GetCultures(CultureTypes.AllCultures);
-
-            //Find the location where application installed.
-            string exeLocation = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
-
-            //Return all culture for which satellite folder found with culture code.
-            //return culture.Where(cultureInfo => Directory.Exists(Path.Combine(exeLocation, cultureInfo.Name)));
-            IList<CultureInfo> cultures = new List<CultureInfo>();
-            foreach(var cultureInfo in culture) {
-                if (Directory.Exists(Path.Combine(exeLocation, cultureInfo.Name))) {
-                    cultures.Add(cultureInfo);
-                }
-            }
-            return cultures;
         }
 
         private void ignoressl_CheckedChanged(object sender, EventArgs e)

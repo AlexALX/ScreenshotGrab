@@ -212,6 +212,21 @@
   <metadata name="MenuTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>715, 17</value>
   </metadata>
+  <data name="MenuTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 348</value>
+  </data>
+  <data name="&gt;&gt;MenuTray.Name" xml:space="preserve">
+    <value>MenuTray</value>
+  </data>
+  <data name="&gt;&gt;MenuTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>ScreenShot Grab</value>
+  </data>
+  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="TrayClipboard.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 22</value>
   </data>
@@ -335,21 +350,6 @@
   <data name="TrayExit.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
-  <data name="MenuTray.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 370</value>
-  </data>
-  <data name="&gt;&gt;MenuTray.Name" xml:space="preserve">
-    <value>MenuTray</value>
-  </data>
-  <data name="&gt;&gt;MenuTray.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>ScreenShot Grab</value>
-  </data>
-  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="loadfrom.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 91</value>
   </data>
@@ -387,13 +387,13 @@
     <value>262, 12</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 26</value>
+    <value>89, 26</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>ScreenShoot Grab
+    <value>ScreenShot Grab
 (c) 2016 by</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
@@ -594,21 +594,6 @@
   <metadata name="MenuLastImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>405, 17</value>
   </metadata>
-  <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Копировать ссылку</value>
-  </data>
-  <data name="DeleteImage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="DeleteImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="DeleteImage.Text" xml:space="preserve">
-    <value>Удалить изображение</value>
-  </data>
   <data name="MenuLastImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 48</value>
   </data>
@@ -645,24 +630,27 @@
   <data name="&gt;&gt;lastlabel.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Копировать ссылку</value>
+  </data>
+  <data name="DeleteImage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DeleteImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="DeleteImage.Text" xml:space="preserve">
+    <value>Удалить изображение</value>
+  </data>
   <data name="savelabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <metadata name="MenuLastFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>560, 17</value>
   </metadata>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 22</value>
-  </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Копировать путь к файлу</value>
-  </data>
-  <data name="DeleteFileMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 22</value>
-  </data>
-  <data name="DeleteFileMenu.Text" xml:space="preserve">
-    <value>Удалить файл</value>
-  </data>
   <data name="MenuLastFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 48</value>
   </data>
@@ -698,6 +686,18 @@
   </data>
   <data name="&gt;&gt;savelabel.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Копировать путь к файлу</value>
+  </data>
+  <data name="DeleteFileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="DeleteFileMenu.Text" xml:space="preserve">
+    <value>Удалить файл</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -794,7 +794,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>ScreenShoot Grab</value>
+    <value>ScreenShot Grab</value>
   </data>
   <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
     <value>saveFileDialog1</value>
