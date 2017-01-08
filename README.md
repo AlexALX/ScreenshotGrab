@@ -4,7 +4,7 @@
 ###[DOWNLOAD](https://github.com/AlexALX/ScreenshootGrab/releases)
 
 ## Description
-This is small simple program to grab and save screenshots on the computer with the ability to upload in own server or [imgur.com](http://imgur.com/) service.
+This is small simple program to grab and save screenshots on the computer with the ability to upload in own server or services [imgur.com](http://imgur.com/), [fastpic.ru](http://fastpic.ru/).
 
 You can also edit the image via standard windows editor (paint) or specify your own.
 
@@ -14,7 +14,7 @@ The program was created to implement unpretentious image service for own needs.
 * Create screenshots from screen or window.
 * Save screenshots in PNG/JPG/BMP/GIF formats.
 * Edit screenshots via system editor (paint) or specify your own.
-* Upload screenshots to imgur service or own server (php script included).
+* Upload screenshots to imgur/fastpic service or own server (php script included).
 * History of events.
 * Some customization settings.
 
@@ -48,7 +48,7 @@ Read more on [wiki](https://github.com/AlexALX/ScreenshootGrab/wiki).
 ###[СКАЧАТЬ](https://github.com/AlexALX/ScreenshootGrab/releases)
 
 ## Описание
-Небольшая простая программа для захвата и сохранения скриншотов на компьютер с возможностью загрузки на свой сервер или сервис [imgur.com](http://imgur.com/).
+Небольшая простая программа для захвата и сохранения скриншотов на компьютер с возможностью загрузки на свой сервер или сервисы [imgur.com](http://imgur.com/), [fastpic.ru](http://fastpic.ru/).
 
 Также можно редактировать изображение стандартным редактором windows (paint) или указать собственный.
 
@@ -58,7 +58,7 @@ Read more on [wiki](https://github.com/AlexALX/ScreenshootGrab/wiki).
 * Создание скриншотов экрана или окна.
 * Сохранение скриншотов в PNG/JPG/BMP/GIF форматах.
 * Редактирование скриншотов системным редактором (paint) или указать свой собственный.
-* Загрузка скриншотов на сервис imgur или свой сервер (php скрипт в комплекте).
+* Загрузка скриншотов на сервис imgur/fastpic или свой сервер (php скрипт в комплекте).
 * История событий.
 * Некоторые возможности настройки.
 
