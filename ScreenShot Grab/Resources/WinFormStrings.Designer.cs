@@ -151,6 +151,15 @@ namespace ScreenShot_Grab.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Захвачен скришот части экрана.
+        /// </summary>
+        internal static string event_grabc {
+            get {
+                return ResourceManager.GetString("event_grabc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Захвачен скриншот программы.
         /// </summary>
         internal static string event_grabw {

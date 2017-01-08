@@ -30,6 +30,9 @@ Q: How to make screenshot?
 Q: How to make screenshot of window?
 <br>A: Press Alt+PrintScreen keys combination on active window.
 
+Q: How to make screenshot from part of screen?
+<br>A: Press Shift+PrintScreen keys combination and then click by left mouse button and choose area.
+
 Q: Program crash at startup!
 <br>A: Make sure you have installed .NET Framework v2.0 or newer.
 
@@ -70,6 +73,9 @@ Read more on [wiki](https://github.com/AlexALX/ScreenshootGrab/wiki).
 
 В: Как сделать скриншот окна?
 <br>О: Нажать комбинацию Alt+PrintScreen на нужном окне.
+
+В: Как сделать скриншот части экрана?
+<br>О: Нажать комбинацию Shift+PrintScreen и затем левой кнопкой мыши выделить нужную область.
 
 В: Программа выдаёт критическую ошибку при запуске!
 <br>О: Убедитесь что вы установили .NET Framework v2.0 или новее.

@@ -73,7 +73,10 @@ namespace ScreenShot_Grab
             contentmenu.Items[0].Visible = show;
             contentmenu.Items[1].Visible = show;
             contentmenu.Items[3].Visible = (show && info.Item.SubItems[4].Text != "3");
-            contentmenu.Items[3].Enabled = (info.Item.SubItems[5].Text != "");
+            contentmenu.Items[3].Enabled = (info.Item.SubItems[5].Text != "" || info.Item.SubItems[4].Text == "1");
+            /*for (int i = 0; i < info.Item.SubItems.Count; i++) { 
+                Debug.WriteLine(info.Item.SubItems[i].Text);
+            }*/
             contentmenu.Show(this, loc);
             return;
         }
@@ -121,10 +124,16 @@ namespace ScreenShot_Grab
             if (item.SubItems[4].Text == "1") {
                 form1.DeleteFile(item.SubItems[3].Text);
                 item.SubItems[4].Text = "3";
+                events[item][4] = "3";
                 //selected.ForeColor = eventlist.ForeColor;
             } else if (item.SubItems[4].Text == "2" && item.SubItems[5].Text != "") {
-                form1.DeleteImgur(item.SubItems[3].Text, item.SubItems[5].Text);
+                if (item.SubItems[3].Text.Contains("fastpic.ru")) {
+                    FastpicAPI.DeleteImage(form1, item.SubItems[3].Text, item.SubItems[5].Text);
+                } else {
+                    ImgurAPI.DeleteImage(form1, item.SubItems[3].Text, item.SubItems[5].Text);
+                }
                 item.SubItems[4].Text = "3";
+                events[item][4] = "3";
             }
         }
 
@@ -150,7 +159,7 @@ namespace ScreenShot_Grab
                 }
                 file.Close();
             } catch (Exception ex) {
-                MessageBox.Show(ex.Message, form1.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, MainForm.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

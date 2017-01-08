@@ -38,5 +38,10 @@ namespace ScreenShot_Grab
         {
             img.Image.Dispose();
         }
+
+        private void PreviewForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape) Close();
+        }
     }
 }

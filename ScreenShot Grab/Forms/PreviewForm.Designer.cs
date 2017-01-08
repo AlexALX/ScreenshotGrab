@@ -57,6 +57,7 @@
             this.ShowInTaskbar = false;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PreviewForm_Deactivate);
             this.Load += new System.EventHandler(this.PreviewForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PreviewForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

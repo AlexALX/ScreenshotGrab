@@ -147,6 +147,9 @@
   <data name="event_grab" xml:space="preserve">
     <value>Захвачен скриншот экрана</value>
   </data>
+  <data name="event_grabc" xml:space="preserve">
+    <value>Захвачен скришот части экрана</value>
+  </data>
   <data name="event_grabw" xml:space="preserve">
     <value>Захвачен скриншот программы</value>
   </data>

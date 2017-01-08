@@ -97,7 +97,7 @@ namespace ScreenShot_Grab
             Properties.Settings.Default.cutborder = cutborder.Checked;
             var spath = path.Text;
             if (!Directory.Exists(spath)) {
-                MessageBox.Show(form1.LocM.GetString("path_nf"), form1.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(MainForm.LocM.GetString("path_nf"), MainForm.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else {
                 form1.spath = spath;
                 if (spath == Application.StartupPath + @"\src\") { spath = ""; }
@@ -136,11 +136,11 @@ namespace ScreenShot_Grab
         internal void RegImgur()
         {
             if (Properties.Settings.Default.account != "") {
-                imgurb.Text = form1.LocM.GetString("unlink_acc");
-                status.Text = form1.LocM.GetString("link_acc_status") + " " + Properties.Settings.Default.account;
+                imgurb.Text = MainForm.LocM.GetString("unlink_acc");
+                status.Text = MainForm.LocM.GetString("link_acc_status") + " " + Properties.Settings.Default.account;
             } else {
-                imgurb.Text = form1.LocM.GetString("link_acc");
-                status.Text = form1.LocM.GetString("noacc");
+                imgurb.Text = MainForm.LocM.GetString("link_acc");
+                status.Text = MainForm.LocM.GetString("noacc");
             }
         }
 
@@ -156,11 +156,6 @@ namespace ScreenShot_Grab
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             adv.Enabled = cutborder.Checked;
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://api.imgur.com/oauth2/addclient/");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -188,20 +183,7 @@ namespace ScreenShot_Grab
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.account != "") {
-                Properties.Settings.Default.account = "";
-                Properties.Settings.Default.access_token = "";
-                Properties.Settings.Default.refresh_token = "";
-                Properties.Settings.Default.Save();
-                RegImgur();
-            } else {
-                imgurb.Enabled = false;
-                System.Diagnostics.Process.Start("https://api.imgur.com/oauth2/authorize?client_id=" + form1.clientid + "&response_type=pin&state=APPLICATION_STATE");
-                Thread.Sleep(1000);
-                var form = new PinForm(this);
-                form.ShowDialog();
-                imgurb.Enabled = true;
-            }
+            ImgurAPI.ConnectAccount(this);
         }
 
         private void format_SelectedIndexChanged(object sender, EventArgs e)

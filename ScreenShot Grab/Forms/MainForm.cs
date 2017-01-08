@@ -33,14 +33,11 @@ namespace ScreenShot_Grab
             ImageFormat.Gif
         };
 
-        internal ResourceManager LocM = new ResourceManager("ScreenShot_Grab.Resources.WinFormStrings", typeof(MainForm).Assembly);
-
-        internal string clientid = "afd1481e5938c4d";
-        internal string clientsecret = "3d4ea898105c1a3f01baeac89ff602f97e9df6ab";
+        static internal ResourceManager LocM = new ResourceManager("ScreenShot_Grab.Resources.WinFormStrings", typeof(MainForm).Assembly);
 
         internal string spath = "";
         internal string lastfile = "";
-        private string lastlink = "";
+        internal string lastlink = "";
 
         internal Bitmap lastres = null;
 
@@ -49,6 +46,8 @@ namespace ScreenShot_Grab
         private StreamWriter logfile = null;
 
         private bool mainlock = false;
+
+        internal bool Selection = false;
 
         /// <summary>
         /// Main functions
@@ -187,7 +186,7 @@ namespace ScreenShot_Grab
             }
         }
 
-        internal void OnGrabScreen(Bitmap res, bool clipboard = false, bool capwindow = false)
+        internal void OnGrabScreen(Bitmap res, bool clipboard = false, int mode = 0)
         {
             if (lastres != null) lastres.Dispose();  // fix memory leak with clicking print screen
             lastres = res;
@@ -215,7 +214,8 @@ namespace ScreenShot_Grab
             if (clipboard) {
                 AddEvent(LocM.GetString("event_clipboard"));
             } else {
-                AddEvent(LocM.GetString("event_grab" + (capwindow ? "w" : "")));
+                if (mode == 2) AddEvent(LocM.GetString("event_grabc"));
+                else AddEvent(LocM.GetString("event_grab" + (mode == 1 ? "w" : "")));
             }
             if (Properties.Settings.Default.autosave && !clipboard) {
                 SimpleSave();
@@ -228,11 +228,13 @@ namespace ScreenShot_Grab
 
         internal IList<string[]> events = new List<string[]>();
         private HistoryForm historyform;
+        private string[] lastitem;
 
         internal void AddEvent(string desc, string file = "", int type = 0, string rmid = "")
         {
             var item = new string[] { DateTime.Now.ToString("G"), Path.GetFileName(file), desc, file, type.ToString(), rmid};
             events.Add(item);
+            lastitem = item;
             if (historyform!=null) {
                 historyform.AddEvent(item);
             }
@@ -345,7 +347,6 @@ namespace ScreenShot_Grab
                     }
                 }
             }
-
             if (err) {
                 savelabel.Text = LocM.GetString("error");
             } else {
@@ -457,76 +458,37 @@ namespace ScreenShot_Grab
             DeleteImage.Enabled = false;
             removeid = "";
 
-            if (Properties.Settings.Default.service==1 
-            && Properties.Settings.Default.access_token!=""
-            && DateTime.Now>Properties.Settings.Default.expires) {
-                RefreshToken();
-            }
-
-            using (var client = new WebClient()) {
-                var url = "";
-                var pdata = new NameValueCollection();
-                if (Properties.Settings.Default.service == 0) {
-                    url = Properties.Settings.Default.svurl;
-                    client.Headers.Add("User-Agent", Properties.Settings.Default.agent);
-                    pdata.Add("lang", Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName);
+            try {
+                var link = "";
+                if (Properties.Settings.Default.service == 1) {
+                    link = ImgurAPI.UploadFile(this, data); 
+                } else if (Properties.Settings.Default.service == 2) {
+                    Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                    var FileName = ConvertToBase(unixTimestamp, 36);
+                    var FileExt = ImgFormatExt[Properties.Settings.Default.format];
+                    link = FastpicAPI.UploadFile(this, data, FileName + "." + FileExt);
                 } else {
-                    if (Properties.Settings.Default.access_token != "") {
-                        client.Headers.Add("Authorization", "Bearer " + Properties.Settings.Default.access_token);
-                    } else {
-                        client.Headers.Add("Authorization", "Client-ID " + clientid);
-                    }
-                    url = "https://api.imgur.com/3/image.xml";
+                    link = WebServerAPI.UploadFile(this, data);
                 }
-                pdata.Add("image", Convert.ToBase64String(data));
-
-                try {
-                    var response = client.UploadValues(url, "POST", pdata);
-                    var result = Encoding.UTF8.GetString(response);
-
-                    var link = "";
-                    if (Properties.Settings.Default.service == 0) {
-                        if (result.StartsWith("http")) {
-                            link = result;
-                        } else {
-                            if (result == "") result = LocM.GetString("sv_err");
-                            throw new Exception(result);
-                        }
-                    } else {
-                        XmlDocument doc = new XmlDocument();
-                        doc.LoadXml(result);
-                        var err = doc.DocumentElement.SelectSingleNode("/data/error");
-                        if (err != null) {
-                            throw new Exception(err.InnerText);
-                        } else {
-                            var rem = doc.DocumentElement.SelectSingleNode("/data/deletehash");
-                            if (rem != null) {
-                                removeid = rem.InnerText;
-                                DeleteImage.Enabled = true;
-                            }
-                            link = doc.DocumentElement.SelectSingleNode("/data/link").InnerText;
-                        }
-                    }
-                    lastlink = link;
-                    lastlabel.Text = Path.GetFileName(link);
-                    lastlabel.Enabled = true;
-                    TrayCopyLink.Enabled = true;
-                    AddEvent(LocM.GetString("event_upload"), lastlink, 2, removeid);
-                    if (Properties.Settings.Default.openlink) {
-                        try {
-                            System.Diagnostics.Process.Start(link);
-                        } catch { }
-                    }
-                    if (Properties.Settings.Default.copylink) {
-                        Clipboard.SetText(link);
-                    }
-                } catch (Exception e) {
-                    lastlabel.Text = LocM.GetString("error");
-                    lastlabel.Enabled = false;
-                    TrayCopyLink.Enabled = false;
-                    AddEvent(LocM.GetString("event_upload_err"));
-                    MessageBox.Show(e.Message, LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lastlink = link;
+                lastlabel.Text = Path.GetFileName(link);
+                lastlabel.Enabled = true;
+                TrayCopyLink.Enabled = true;
+                AddEvent(LocM.GetString("event_upload"), lastlink, 2, removeid);
+                if (Properties.Settings.Default.openlink) {
+                    try {
+                        System.Diagnostics.Process.Start(link);
+                    } catch { }
                 }
+                if (Properties.Settings.Default.copylink) {
+                    Clipboard.SetText(link);
+                }
+            } catch (Exception e) {
+                lastlabel.Text = LocM.GetString("error");
+                lastlabel.Enabled = false;
+                TrayCopyLink.Enabled = false;
+                AddEvent(LocM.GetString("event_upload_err"));
+                MessageBox.Show(e.Message, LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             if (lastres != null) {
                 upload.Enabled = true;
@@ -601,39 +563,6 @@ namespace ScreenShot_Grab
                 load.Enabled = true;
                 loadfrom.Enabled = true;
             }*/
-        }
-
-        // imgur refresh token
-        private void RefreshToken()
-        {
-            using (var client = new WebClient()) {
-                var pdata = new NameValueCollection {
-                    {"client_id", clientid},
-                    {"client_secret", clientsecret},
-                    {"grant_type","refresh_token"},
-                    {"refresh_token",Properties.Settings.Default.refresh_token}
-                };
-
-                try {
-                    var response = client.UploadValues("https://api.imgur.com/oauth2/token.xml", "POST", pdata);
-                    var result = Encoding.UTF8.GetString(response);
-                    XmlDocument doc = new XmlDocument();
-                    doc.LoadXml(result);
-                    //Debug.WriteLine(result);
-                    var access = doc.DocumentElement.SelectSingleNode("/response/access_token").InnerText;
-                    Properties.Settings.Default.access_token = access;
-                    var refresh = doc.DocumentElement.SelectSingleNode("/response/refresh_token").InnerText;
-                    Properties.Settings.Default.refresh_token = refresh;
-                    var account = doc.DocumentElement.SelectSingleNode("/response/account_username").InnerText;
-                    Properties.Settings.Default.account = account;
-                    var expires = doc.DocumentElement.SelectSingleNode("/response/expires_in").InnerText;
-                    Properties.Settings.Default.expires = DateTime.Now.AddSeconds(Convert.ToInt32(expires));
-                    Properties.Settings.Default.Save();
-                } catch { //(Exception ex) {
-                    //MessageBox.Show(ex.Message, LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    //Enabled = true;
-                }
-            }
         }
 
         private void uploadfrom_Click(object sender, EventArgs e)
@@ -895,11 +824,13 @@ namespace ScreenShot_Grab
             }
         }
 
-        internal void DeleteFile(string file)
+        internal bool DeleteFile(string file)
         {
+            var res = false;
             try {
                 File.Delete(file);
                 AddEvent(LocM.GetString("event_removefile"), file);
+                res = true;
             } catch (Exception ex) {
                 AddEvent(LocM.GetString("event_removefile_err"), file);
                 MessageBox.Show(ex.Message, LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -909,46 +840,29 @@ namespace ScreenShot_Grab
                 TrayCopyFilePath.Enabled = false;
                 savelabel.Enabled = false;
             }
+            return res;
         }
 
         private void DeleteFile_Click(object sender, EventArgs e)
         {
-            DeleteFile(lastfile);
-        }
-
-        internal void DeleteImgur(string link, string rmid)
-        {
-            if (!link.Contains("imgur.com") || rmid == "") return;
-            using (var client = new WebClient()) {
-                if (Properties.Settings.Default.access_token != "") {
-                    client.Headers.Add("Authorization", "Bearer " + Properties.Settings.Default.access_token);
-                } else {
-                    client.Headers.Add("Authorization", "Client-ID " + clientid);
-                }
-                try {
-                    var response = client.UploadValues("https://api.imgur.com/3/image/" + rmid + ".xml", "DELETE", new NameValueCollection());
-                    var result = Encoding.UTF8.GetString(response);
-                    XmlDocument doc = new XmlDocument();
-                    doc.LoadXml(result);
-                    var status = doc.DocumentElement.SelectSingleNode("/data");
-                    if (status != null && status.InnerText == "true") {
-                        if (lastlink == link) {
-                            lastlabel.Enabled = false;
-                            lastlink = "";
-                            removeid = "";
-                        }
-                        AddEvent(LocM.GetString("event_removeimg"), link);
-                    } else throw new Exception(LocM.GetString("img_rm_err"));
-                } catch (Exception ex) {
-                    AddEvent(LocM.GetString("event_removeimg_err"), link);
-                    MessageBox.Show(ex.Message, LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+            var li = lastitem;
+            if (DeleteFile(lastfile)) {
+                li[4] = "3";
             }
         }
 
         private void DeleteImage_Click(object sender, EventArgs e)
         {
-            DeleteImgur(lastlink,removeid);
+            var res = false;
+            var li = lastitem;
+            if (lastlink.Contains("fastpic.ru")) {
+                res = FastpicAPI.DeleteImage(this, lastlink, removeid);
+            } else {
+                res = ImgurAPI.DeleteImage(this, lastlink, removeid);
+            }
+            if (res) {
+                li[4] = "3";
+            }
         }
 
         private void MainForm_Deactivate(object sender, FormClosedEventArgs e)
@@ -963,6 +877,16 @@ namespace ScreenShot_Grab
                 Hide();
                 WindowState = FormWindowState.Minimized;
             }
+        }
+
+        private void savelabel_TextChanged(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(savelabel, lastfile);
+        }
+
+        private void lastlabel_TextChanged(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(lastlabel, lastlink);
         }
     }
 }

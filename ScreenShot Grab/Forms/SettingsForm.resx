@@ -127,9 +127,8 @@
   <data name="&gt;&gt;cutborder.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button1.ToolTip" xml:space="preserve">
     <value />
@@ -146,30 +145,37 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="tabPage3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;format.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="adv.Text" xml:space="preserve">
     <value>Детально</value>
   </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="logfilebrowse.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;status.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="autosave.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="logfile.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 20</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 13</value>
   </data>
   <data name="startmin.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 17</value>
@@ -180,11 +186,20 @@
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;copylink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;imgurb.Name" xml:space="preserve">
     <value>imgurb</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="status.Text" xml:space="preserve">
+    <value>отсуствует.</value>
   </data>
   <data name="&gt;&gt;pathselect.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -195,8 +210,8 @@
   <data name="editor.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="autosave.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 77</value>
@@ -210,23 +225,29 @@
   <data name="&gt;&gt;logfilebrowse.Name" xml:space="preserve">
     <value>logfilebrowse</value>
   </data>
-  <data name="status.ToolTip" xml:space="preserve">
-    <value />
+  <data name="copylink.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>EXE|*.exe</value>
   </data>
-  <data name="copylink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 17</value>
+  <data name="logfile.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;reset.Name" xml:space="preserve">
     <value>reset</value>
   </data>
+  <data name="opendir.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="svurl.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="editselect.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;language.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -246,8 +267,8 @@
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;editor.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 97</value>
@@ -273,14 +294,17 @@
   <data name="useragent.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 20</value>
   </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
   <data name="editor.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 20</value>
   </data>
   <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="status.Text" xml:space="preserve">
-    <value>отсуствует.</value>
+  <data name="format.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 21</value>
   </data>
   <data name="editselect.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 21</value>
@@ -300,8 +324,9 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 80</value>
   </data>
-  <data name="&gt;&gt;opendir.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Загрузка картинок на сервис fastpic.ru.
+Картинки загружаются анонимно.</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -321,14 +346,14 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Настройки</value>
   </data>
-  <data name="&gt;&gt;reset.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;status.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;logfile.Name" xml:space="preserve">
     <value>logfile</value>
   </data>
-  <data name="autoshow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 70</value>
+  <data name="imgurb.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -336,11 +361,8 @@
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="opendir.Text" xml:space="preserve">
-    <value>Автоматически открывать папку после сохранения</value>
-  </data>
-  <data name="autosave.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 32</value>
@@ -354,6 +376,12 @@
   <data name="startmin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;opendir.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 175</value>
   </data>
@@ -362,9 +390,6 @@
   </data>
   <data name="pathselect.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 63</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -384,6 +409,9 @@
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="&gt;&gt;startmin.Name" xml:space="preserve">
+    <value>startmin</value>
+  </data>
   <data name="autoshow.Text" xml:space="preserve">
     <value>Автоматически открывать окно после захвата</value>
   </data>
@@ -393,8 +421,8 @@
   <data name="autosave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>297, 78</value>
@@ -404,9 +432,6 @@
   </data>
   <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;quality.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="path.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -438,32 +463,41 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 13</value>
   </data>
   <data name="logfilecheck.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="adv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 21</value>
+  <data name="imgurb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 46</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 63</value>
   </data>
-  <data name="copylink.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="startmin.ToolTip" xml:space="preserve">
-    <value />
+  <data name="folderBrowserDialog1.Description" xml:space="preserve">
+    <value>Выберите директорию куда будут сохранятся файлы:</value>
   </data>
   <data name="cutborder.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="editselect.Text" xml:space="preserve">
-    <value>Обзор</value>
+  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 19</value>
+  </data>
+  <data name="&gt;&gt;editselect.Name" xml:space="preserve">
+    <value>editselect</value>
+  </data>
+  <data name="&gt;&gt;logfilebrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -477,8 +511,11 @@
   <data name="&gt;&gt;adv.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
-    <value>saveFileDialog1</value>
+  <data name="sysedit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
     <value>tabControl1</value>
@@ -486,11 +523,14 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 13</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="editor.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="autoshow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;openlink.Name" xml:space="preserve">
     <value>openlink</value>
@@ -501,14 +541,11 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="reset.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="copylink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
   </data>
   <data name="editselect.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 34</value>
-  </data>
-  <data name="&gt;&gt;ignoressl.Parent" xml:space="preserve">
-    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;status.Name" xml:space="preserve">
     <value>status</value>
@@ -516,8 +553,8 @@
   <data name="quality.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 26</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>193, 58</value>
@@ -525,8 +562,11 @@
   <data name="&gt;&gt;autoshow.Name" xml:space="preserve">
     <value>autoshow</value>
   </data>
-  <data name="autosave.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;sysedit.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -540,17 +580,23 @@
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="editselect.Text" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
   <data name="&gt;&gt;startmin.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="editor.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;opendir.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;sysedit.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="clipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 37</value>
   </data>
   <data name="format.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 55</value>
@@ -564,8 +610,11 @@
   <data name="&gt;&gt;openlink.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="clipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 17</value>
+  </data>
+  <data name="autoshow.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Использовать сервис:</value>
@@ -573,23 +622,29 @@
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;quality.Name" xml:space="preserve">
     <value>quality</value>
   </data>
-  <data name="sysedit.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="sysedit.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 36</value>
   </data>
   <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
     <value>tabPage2</value>
   </data>
   <data name="logfilecheck.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -606,25 +661,22 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 13</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;imgurb.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 58</value>
-  </data>
-  <data name="openlink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 17</value>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="startmin.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="ignoressl.Text" xml:space="preserve">
@@ -639,23 +691,26 @@
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="reset.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="logfile.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="adv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -669,11 +724,14 @@
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;useragent.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="openlink.Text" xml:space="preserve">
-    <value>Автоматически открывать ссылку после загрузки</value>
+  <data name="logfilebrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 124</value>
   </data>
   <data name="startmin.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 88</value>
@@ -684,8 +742,8 @@
   <data name="&gt;&gt;opendir.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;logfilebrowse.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -693,11 +751,11 @@
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Папка по-умолчанию:</value>
-  </data>
-  <data name="logfilebrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 21</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -705,11 +763,14 @@
   <data name="language.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;reset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 13</value>
   </data>
-  <data name="imgurb.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -741,8 +802,8 @@
   <data name="cutborder.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 19</value>
   </data>
-  <data name="&gt;&gt;adv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>По умолчанию картинки загружаются анонимно.</value>
@@ -750,11 +811,17 @@
   <data name="&gt;&gt;format.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Fastpic</value>
+  </data>
+  <data name="status.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;adv.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="logfilecheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 106</value>
   </data>
   <data name="&gt;&gt;startmin.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -764,6 +831,9 @@
   </data>
   <data name="&gt;&gt;editselect.Parent" xml:space="preserve">
     <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
   </data>
   <data name="status.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -777,11 +847,8 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 109</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="useragent.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 69</value>
@@ -810,8 +877,8 @@
   <data name="&gt;&gt;ignoressl.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="logfilebrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;ignoressl.Name" xml:space="preserve">
     <value>ignoressl</value>
@@ -825,8 +892,8 @@
   <data name="&gt;&gt;autoshow.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="clipboard.ToolTip" xml:space="preserve">
-    <value>Позволяет захватывать скриншоты из полноэкранных приложений на Windows 10</value>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>URL сервера:</value>
@@ -858,9 +925,6 @@
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Свой сервер</value>
   </data>
-  <data name="format.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 21</value>
-  </data>
   <data name="&gt;&gt;path.Name" xml:space="preserve">
     <value>path</value>
   </data>
@@ -870,8 +934,8 @@
   <data name="&gt;&gt;editor.Name" xml:space="preserve">
     <value>editor</value>
   </data>
-  <data name="&gt;&gt;editselect.Name" xml:space="preserve">
-    <value>editselect</value>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;reset.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -894,17 +958,17 @@
   <data name="button1.Text" xml:space="preserve">
     <value>Сохранить</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
   </data>
-  <data name="clipboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 37</value>
+  <data name="opendir.Text" xml:space="preserve">
+    <value>Автоматически открывать папку после сохранения</value>
   </data>
   <data name="cutborder.Text" xml:space="preserve">
     <value>Автоматическая обрезка</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="autoshow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 70</value>
   </data>
   <data name="&gt;&gt;status.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -912,14 +976,17 @@
   <data name="label7.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 13</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 109</value>
   </data>
   <data name="logfile.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 125</value>
   </data>
   <data name="&gt;&gt;path.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 100</value>
   </data>
   <data name="svurl.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -930,11 +997,11 @@
   <data name="sysedit.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 58</value>
   </data>
-  <data name="sysedit.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;quality.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="openlink.ToolTip" xml:space="preserve">
     <value />
@@ -942,11 +1009,14 @@
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Загрузка скриншотов</value>
+  <data name="&gt;&gt;autosave.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="sysedit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 16</value>
@@ -960,8 +1030,8 @@
   <data name="language.Items1" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="logfilebrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
   </data>
   <data name="&gt;&gt;autoshow.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -969,17 +1039,23 @@
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="svurl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 20</value>
-  </data>
-  <data name="format.Items2" xml:space="preserve">
-    <value>BMP</value>
-  </data>
   <data name="adv.Location" type="System.Drawing.Point, System.Drawing">
     <value>198, 17</value>
   </data>
+  <data name="svurl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 20</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;adv.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
   <data name="imgurb.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="logfilebrowse.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;pathselect.Name" xml:space="preserve">
     <value>pathselect</value>
@@ -993,11 +1069,14 @@
   <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>User-Agent:</value>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="logfilebrowse.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="openlink.Text" xml:space="preserve">
+    <value>Автоматически открывать ссылку после загрузки</value>
   </data>
   <data name="status.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 80</value>
@@ -1014,14 +1093,14 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Сохранение скриншотов</value>
   </data>
-  <data name="logfilebrowse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 124</value>
-  </data>
   <data name="&gt;&gt;quality.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;quality.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="clipboard.ToolTip" xml:space="preserve">
+    <value>Позволяет захватывать скриншоты из полноэкранных приложений на Windows 10</value>
+  </data>
+  <data name="logfile.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="language.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 21</value>
@@ -1029,8 +1108,14 @@
   <data name="&gt;&gt;copylink.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+  <data name="reset.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="label9.ToolTip" xml:space="preserve">
     <value />
@@ -1041,29 +1126,35 @@
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="autoshow.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;svurl.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;copylink.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 8</value>
   </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 73</value>
+  </data>
   <data name="language.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="logfile.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 13</value>
   </data>
-  <data name="pathselect.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 100</value>
   </data>
-  <data name="&gt;&gt;svurl.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Загрузка скриншотов</value>
   </data>
   <data name="quality.Location" type="System.Drawing.Point, System.Drawing">
     <value>242, 55</value>
@@ -1079,9 +1170,6 @@
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
   </data>
   <data name="&gt;&gt;sysedit.Name" xml:space="preserve">
     <value>sysedit</value>
@@ -1107,8 +1195,11 @@
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;autosave.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;format.Name" xml:space="preserve">
+    <value>format</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Статус привязки:</value>
@@ -1125,8 +1216,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SettingsForm</value>
   </data>
-  <data name="format.Items3" xml:space="preserve">
-    <value>GIF</value>
+  <data name="groupBox4.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1143,17 +1234,17 @@
   <data name="groupBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;autosave.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="pathselect.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="clipboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 17</value>
+  <data name="autosave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 17</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="&gt;&gt;svurl.Name" xml:space="preserve">
+    <value>svurl</value>
   </data>
   <data name="&gt;&gt;logfilebrowse.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -1161,14 +1252,17 @@
   <data name="format.Items1" xml:space="preserve">
     <value>JPG</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="format.Items2" xml:space="preserve">
+    <value>BMP</value>
   </data>
-  <data name="imgurb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 46</value>
+  <data name="format.Items3" xml:space="preserve">
+    <value>GIF</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1182,17 +1276,17 @@
   <data name="clipboard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;editor.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="&gt;&gt;autosave.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 19</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>User-Agent:</value>
   </data>
-  <data name="editselect.ToolTip" xml:space="preserve">
-    <value />
+  <data name="imgurb.Text" xml:space="preserve">
+    <value>Привязать аккаунт</value>
   </data>
   <data name="cutborder.ToolTip" xml:space="preserve">
     <value />
@@ -1203,11 +1297,14 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;adv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="copylink.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1224,11 +1321,11 @@
   <data name="copylink.Text" xml:space="preserve">
     <value>Автоматически копировать ссылку в буфер обмена</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
-  <data name="&gt;&gt;startmin.Name" xml:space="preserve">
-    <value>startmin</value>
+  <data name="logfilebrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
     <value>Захват скриншотов</value>
@@ -1242,8 +1339,8 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
-    <value>openFileDialog1</value>
+  <data name="&gt;&gt;quality.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Imgur</value>
@@ -1269,8 +1366,8 @@
   <data name="useragent.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="groupBox4.ToolTip" xml:space="preserve">
-    <value />
+  <data name="copylink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 17</value>
   </data>
   <data name="&gt;&gt;opendir.Name" xml:space="preserve">
     <value>opendir</value>
@@ -1302,17 +1399,11 @@
   <data name="autoshow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Кач-во:</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>614, 336</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Кач-во:</value>
   </data>
   <data name="opendir.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 17</value>
@@ -1323,14 +1414,11 @@
   <data name="&gt;&gt;folderBrowserDialog1.Name" xml:space="preserve">
     <value>folderBrowserDialog1</value>
   </data>
-  <data name="folderBrowserDialog1.Description" xml:space="preserve">
-    <value>Выберите директорию куда будут сохранятся файлы:</value>
+  <data name="autosave.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 73</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="openlink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 17</value>
   </data>
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1359,8 +1447,8 @@
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 100</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1368,11 +1456,8 @@
   <data name="opendir.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="logfilecheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 106</value>
-  </data>
-  <data name="imgurb.Text" xml:space="preserve">
-    <value>Привязать аккаунт</value>
+  <data name="&gt;&gt;ignoressl.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="reset.Location" type="System.Drawing.Point, System.Drawing">
     <value>360, 307</value>
@@ -1385,9 +1470,6 @@
   </data>
   <data name="startmin.Text" xml:space="preserve">
     <value>Открывать программу свёрнутой</value>
-  </data>
-  <data name="&gt;&gt;svurl.Name" xml:space="preserve">
-    <value>svurl</value>
   </data>
   <data name="pathselect.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 21</value>
@@ -1417,14 +1499,14 @@
   <data name="tabPage2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="opendir.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 58</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>277, 100</value>
   </data>
-  <data name="copylink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 52</value>
+  <data name="autoshow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 17</value>
   </data>
   <data name="&gt;&gt;copylink.Name" xml:space="preserve">
     <value>copylink</value>
@@ -1444,20 +1526,11 @@
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="autoshow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 17</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;useragent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
-  </data>
-  <data name="autosave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 17</value>
-  </data>
-  <data name="&gt;&gt;useragent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cutborder.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 17</value>
@@ -1468,9 +1541,9 @@
   <data name="&gt;&gt;language.Name" xml:space="preserve">
     <value>language</value>
   </data>
-  <data name="&gt;&gt;format.Name" xml:space="preserve">
-    <value>format</value>
-  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>186, 17</value>
+  </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
@@ -1482,9 +1555,6 @@
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>56</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>186, 17</value>
   </metadata>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>462, 17</value>

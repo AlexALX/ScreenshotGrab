@@ -57,6 +57,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.imgurb = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.startmin = new System.Windows.Forms.CheckBox();
             this.logfilecheck = new System.Windows.Forms.CheckBox();
@@ -85,6 +87,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -258,6 +261,7 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.toolTip1.SetToolTip(this.tabControl1, resources.GetString("tabControl1.ToolTip"));
@@ -309,6 +313,20 @@
             this.toolTip1.SetToolTip(this.imgurb, resources.GetString("imgurb.ToolTip"));
             this.imgurb.UseVisualStyleBackColor = true;
             this.imgurb.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // tabPage3
+            // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Name = "tabPage3";
+            this.toolTip1.SetToolTip(this.tabPage3, resources.GetString("tabPage3.ToolTip"));
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // groupBox3
             // 
@@ -511,6 +529,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -550,7 +570,6 @@
         private System.Windows.Forms.Button editselect;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button imgurb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.Label label6;
@@ -572,5 +591,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.CheckBox startmin;
         private System.Windows.Forms.CheckBox autosave;
+        internal System.Windows.Forms.Button imgurb;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -91,6 +91,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIs\Fastpic.cs" />
+    <Compile Include="Forms\SelectionFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APIs\WebServer.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +132,7 @@
     <Compile Include="Forms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="APIs\Imgur.cs" />
     <Compile Include="PortableSettingsProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -210,6 +216,9 @@
     <EmbeddedResource Include="Resources\WinFormStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WinFormStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectionFrame.resx">
+      <DependentUpon>SelectionFrame.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

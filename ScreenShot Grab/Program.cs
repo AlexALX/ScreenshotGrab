@@ -142,7 +142,7 @@ namespace ScreenShot_Grab
                 _hookID = SetHook(_proc);
                 WinForm = new MainForm();
                 if (!mutex.WaitOne(0, false)) {
-                    MessageBox.Show(WinForm.LocM.GetString("running"), WinForm.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(MainForm.LocM.GetString("running"), MainForm.LocM.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
                 Application.Run(WinForm);
@@ -183,11 +183,15 @@ namespace ScreenShot_Grab
                     Debug.WriteLine(wParam.ToString());
                     if (pressed && wParam == (IntPtr)261 && Keys.Alt == Control.ModifierKeys && number == Keys.PrintScreen) {
                         var res = Scr.Capture(ScreenCapturer.CaptureMode.Window, Properties.Settings.Default.cutborder);
-                        WinForm.OnGrabScreen(res, false, true);
+                        WinForm.OnGrabScreen(res, false, 1);
                         pressed = false;
-                    /*} else if(pressed && wParam == (IntPtr)257 && Keys.Shift == Control.ModifierKeys && number == Keys.PrintScreen) {
-                        Debug.WriteLine("shift+printscreen test");
-                        pressed = false;*/
+                    } else if (pressed && wParam == (IntPtr)257 && Keys.Shift == Control.ModifierKeys && number == Keys.PrintScreen) {
+                        if (!WinForm.Selection) {
+                            var res = Scr.Capture(ScreenCapturer.CaptureMode.Screen);
+                            var form = new SelectionFrame(WinForm,res);
+                            form.ShowDialog();
+                        }
+                        pressed = false;
                     } else if (pressed && wParam == (IntPtr)257 && number == Keys.PrintScreen) {
                         var res = Scr.Capture(ScreenCapturer.CaptureMode.Screen);
                         WinForm.OnGrabScreen(res);

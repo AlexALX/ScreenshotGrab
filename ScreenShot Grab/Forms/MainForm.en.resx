@@ -120,11 +120,20 @@
   <data name="button1.Text" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Save as</value>
   </data>
+  <data name="button2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="upload.Text" xml:space="preserve">
     <value>Upload</value>
+  </data>
+  <data name="upload.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TrayClipboard.Size" type="System.Drawing.Size, System.Drawing">
@@ -232,23 +241,50 @@
   <data name="MenuTray.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 348</value>
   </data>
+  <data name="MenuTray.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="loadfrom.Text" xml:space="preserve">
     <value>Upload from</value>
+  </data>
+  <data name="loadfrom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkLabel1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Edit</value>
   </data>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button6.Text" xml:space="preserve">
     <value>Open folder</value>
+  </data>
+  <data name="button6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="settings.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="settings.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="preview.Text" xml:space="preserve">
     <value>Preview</value>
   </data>
+  <data name="preview.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="about.Text" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="about.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
@@ -256,17 +292,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Last uploaded file:</value>
   </data>
-  <data name="MenuLastImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 48</value>
-  </data>
-  <data name="lastlabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 191</value>
-  </data>
-  <data name="lastlabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="lastlabel.Text" xml:space="preserve">
-    <value>none</value>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 22</value>
@@ -280,17 +307,26 @@
   <data name="DeleteImage.Text" xml:space="preserve">
     <value>Remove image</value>
   </data>
-  <data name="MenuLastFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 48</value>
+  <data name="MenuLastImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 48</value>
   </data>
-  <data name="savelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 175</value>
+  <data name="MenuLastImage.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="savelabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lastlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 191</value>
+  </data>
+  <data name="lastlabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>275, 13</value>
+  </data>
+  <data name="lastlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
-  <data name="savelabel.Text" xml:space="preserve">
+  <data name="lastlabel.Text" xml:space="preserve">
     <value>none</value>
+  </data>
+  <data name="lastlabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 22</value>
@@ -304,16 +340,49 @@
   <data name="DeleteFileMenu.Text" xml:space="preserve">
     <value>Remove file</value>
   </data>
+  <data name="MenuLastFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 48</value>
+  </data>
+  <data name="MenuLastFile.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="savelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 175</value>
+  </data>
+  <data name="savelabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>275, 13</value>
+  </data>
+  <data name="savelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="savelabel.Text" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="savelabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Last saved file:</value>
   </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="clipboard.Text" xml:space="preserve">
     <value>Paste from clipboard</value>
   </data>
+  <data name="clipboard.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="history.Text" xml:space="preserve">
     <value>History</value>
+  </data>
+  <data name="history.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
