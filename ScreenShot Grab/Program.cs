@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Threading;
+using System.Drawing.Imaging;
 
 // (c) http://stackoverflow.com/questions/1163761/capture-screenshot-of-active-window/1163785
 class ScreenCapturer
@@ -97,7 +98,7 @@ class ScreenCapturer
             //CursorPosition = new Point(Cursor.Position.X - rect.Left, Cursor.Position.Y - rect.Top);
         }
 
-        var result = new Bitmap(bounds.Width, bounds.Height);
+        var result = new Bitmap(bounds.Width, bounds.Height, PixelFormat.Format24bppRgb);
 
         using (var g = Graphics.FromImage(result))
         {
